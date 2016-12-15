@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { Person } from './person';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>{{title}}</h1>'
+    template: `
+    <h1>  {{title}}  </h1>
+    <people-list>
+    `
 })
 export class AppComponent {
-    title: string = "Star Wars PPlz!!!";
+    title: String = 'Star Wars PPlz!!!';
 }

@@ -1,5 +1,17 @@
+import { Component } from '@angular/core';
 import { Person } from './person';
 
+@Component({
+    selector: 'people-list',
+    template: `
+  <!-- this is the new syntax for ng-repeat -->
+  <ul>
+    <li *ngFor="let person of people">
+     {{person.name}}
+    </li>
+  </ul>
+  `
+})
 export class PeopleListComponent{
     people: Person[] = [
         {name: 'Luke Skywalker', height: 177, weight: 70},
